@@ -1,3 +1,5 @@
+let burgerMenuOpen = false;
+let modalIsOpen = false;
 const swiperData =  [
     {
         "id" : 1,
@@ -46,19 +48,46 @@ const swiperData =  [
         "name": "Сливочный, слайсы",
         "weight" : "130, 250 г",
         "src": "assets/images/slider/image-40.png"
-       
-    },
 
+    },
 ];
 
 init();
 
 function init() {
     // loadSwiperData();
+    initSubscription();
     drawSwiperElements();
-    
     swiperInit();
     
+}
+
+function initSubscription() {
+    document.body.addEventListener('click', function(e) {
+        if (!modalIsOpen) {
+            return;
+        } else if (event.target.classList.contains('window') === false) {
+            closeWindow();
+        }
+    });
+    document.body.addEventListener('click', function(e) {
+        const button = document.getElementById("burger_toggle");
+        const menu = document.getElementById("burger_main");
+
+        if (!burgerMenuOpen) {
+            return;
+        } else if (event.target.classList.contains('burger_main') === false) {
+            button.classList.remove('active');
+            menu.classList.remove('active');
+            burgerMenuOpen = false;
+        }
+    });
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (currentScrollPos !== 0) {
+            document.getElementById("burger_main").classList.remove('active'),
+                document.getElementById("burger_toggle").classList.remove('active');
+        }};
 }
 
 async function loadSwiperData() {
@@ -86,11 +115,9 @@ function drawSwiperElements() {
 }
 
 function swiperInit() {
-    console.log('cancel');
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         slidesPerView: 1.5,
-        // rewind: true,
         loop: true,
 
         direction: 'horizontal',
@@ -132,77 +159,34 @@ function swiperInit() {
         
     });
 }
-let burgerMenuOpen = false
+
 function burgerMenuToggle () {
     const button = document.getElementById("burger_toggle");
     const menu = document.getElementById("burger_main");
-
     menu.classList.toggle("active");
     button.classList.toggle("active");
-
     setTimeout( () => burgerMenuOpen = true)
-    console.log('true')
 }
 
-document.body.addEventListener('click', function(e) {
-    const button = document.getElementById("burger_toggle");
-    const menu = document.getElementById("burger_main");
-
-    if (!burgerMenuOpen) {
-        return;
-    } else if (event.target.classList.contains('burger_main') === false) {
-        button.classList.remove('active');
-        menu.classList.remove('active');
-        burgerMenuOpen = false;
-    }
-})
-
-
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (currentScrollPos !== 0) {
-    document.getElementById("burger_main").classList.remove('active'),
-    document.getElementById("burger_toggle").classList.remove('active');
-  }};
-
-
-
-
-
-let modalIsOpen = false;
-
-function modalWindowOpen () {
+function openModalWindow () {
     const body = document.querySelector("body");
-
     let div = document.createElement("div")
     div.classList.add("modal_window")
     div.innerHTML = `<div class="window"></div>
     <div class="btn_div">
     <span onclick="closeWindow()" class="btn_close"></span></div>`
     body.append(div)
-
     body.style.overflow = "hidden"
     setTimeout( () => modalIsOpen = true);
 }
 
 function closeWindow () {
     const body = document.querySelector("body");
-
     const modal_window = document.querySelector(".modal_window");
     modal_window.remove()
     body.style.overflow = "visible"
     modalIsOpen = false;
 }
-
-
-
-document.body.addEventListener('click', function(e) {
-    if (!modalIsOpen) {
-        return;
-    } else if (event.target.classList.contains('window') === false) {
-        closeWindow();
-    }
-})
 
 
 
