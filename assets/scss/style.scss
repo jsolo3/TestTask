@@ -1,0 +1,33 @@
+@import "../scss/blocks/_intro.scss";
+@import "../scss/blocks/_header.scss";
+@import "../scss/blocks/_slider.scss";
+@import "../scss/blocks/_footer.scss";
+@import "../scss/blocks/modal";
+@import "../scss/blocks/_media.scss";
+
+
+
+@font-face {
+    font-family: 'PF Din Text';
+    src: url(../fonts/pfdintextcondpro-bold.woff2),
+    url(../fonts/pfdintextcondpro-bold.woff);
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'PF Din Text';
+    src: url(../fonts/pfdintextcondpro-medium.woff2),
+    url(../fonts/pfdintextcondpro-medium.woff);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text';
+    src: url(../fonts/pfdintextcondpro-regular.woff2),
+    url(../fonts/pfdintextcondpro-regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+

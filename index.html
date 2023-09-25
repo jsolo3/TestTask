@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLTERMANNI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header - nav -->
+    <div class="nav">
+        <div class="container">
+            <div class="header">
+
+                <!-- burger menu -->
+
+                <div class="nav_burger">
+                    <button onclick="burgerMenuToggle()" id="burger_toggle" class="burger_toggle">
+                        <span class="toggle_item"></span>
+                    </button>
+                    <div id="burger_main" class="burger_main">
+                        <div class="burger_section head">
+                            <a href="#">Правила</a>
+                            <a href="#">Призы</a>
+                            <a href="#">Победители</a>
+                        </div>
+                        <div class="burger_section">
+                            <a href="#">Обратная связь</a>
+                            <a href="#">Правила акции</a>
+                            <a href="#">FAQ</a>
+                        </div>
+                        <div class="burger_section resurces">
+                            <div class="footer_kol">
+                                <div class="footer_kol_text">Присоединяйтесь к нам</div>
+                                <div class="footer_kol_resurces burger">
+                                    <a href="#">
+                                        <img src="assets/images/footer/facebook.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/footer/vk.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/footer/in.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/footer/twitter.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/footer/inst.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/footer/pinterest.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="icon">
+                    <img src="assets/images/header/icon.svg" alt="">
+                </div>
+                <div class="header_center">
+                    <div class="header_item">
+                        <a href="#">Правила</a>
+                    </div>
+                    <div class="header_item">
+                        <a href="#">Призы</a>
+                    </div>
+                    <div class="header_item">
+                        <a href="#">Победители</a>
+                    </div>
+                </div>
+                <div onclick="modalWindowOpen()" class="header_right">
+                    <div class="header_item enter">
+                        <a href="#">Вход</a>
+                    </div>
+                    <div class="header_item">
+                        <a href="#">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- intro -->
+    <div class="intro">
+        <div class="container intro">
+            <div class="intro_header">
+                <div class="intro_bg_img"><img src="assets/images/intro/bg.svg" alt=""></div>
+                <div class="intro_img"><img src="assets/images/intro/img_balloon.png" alt=""></div>
+                <div class="intro_btn">
+                    <button class="button">загрузить чек</button>
+                </div>
+                <div class="intro_bg_top"></div>
+                <div class="intro_40year">Нам 40 лет - вам подарки</div>
+
+                <div class="intro_str">
+                    <div class="intro_kol">
+                        <img src="assets/images/intro/kol_1.svg" alt="">
+                        <div class="intro_kol_text">Покупайте сыр
+                            Oltermanni
+                        </div>
+                    </div>
+                    <div class="intro_kol frame">
+                        <img src="assets/images/intro/kol_frame.svg" alt="">
+                    </div>
+                    <div class="intro_kol">
+                        <img src="assets/images/intro/kol_2.svg" alt="">
+                        <div class="intro_kol_text">Регистрируйте чеки
+                            на сайте в период
+                            с 1 сентября по 30 ноября
+                            2020 года
+                        </div>
+                    </div>
+                    <div class="intro_kol frame">
+                        <img src="assets/images/intro/kol_frame.svg" alt="">
+                    </div>
+                    <div class="intro_kol">
+                        <img src="assets/images/intro/kol_3.svg" alt="">
+                        <div class="intro_kol_text">Получайте
+                            гарантированные
+                            призы — деньги
+                            на телефон
+                        </div>
+                    </div>
+                    <div class="intro_kol frame">
+                        <img src="assets/images/intro/kol_frame.svg" alt="">
+                    </div>
+                    <div class="intro_kol">
+                        <img src="assets/images/intro/kol_4.svg" alt="">
+                        <div class="intro_kol_text">Участвуйте
+                            в еженедельных
+                            розыгрышах
+                        </div>
+                    </div>
+                    <div class="intro_kol frame">
+                        <img src="assets/images/intro/kol_frame.svg" alt="">
+                    </div>
+                    <div class="intro_kol">
+                        <img src="assets/images/intro/kol_5.svg" alt="">
+                        <div class="intro_kol_text">Получите возможность выиграть 400 000 ₽
+                            на новый интерьер
+                        </div>
+                    </div>
+                </div>
+                <div class="intro_bg_low"></div>
+                <div class="intro_decor">
+                    <div class="intro_balloon">
+                        <img src="assets/images/intro/balloon.svg" alt="">
+                    </div>
+                    <div class="intro_vector_wh">
+                        <img src="assets/images/intro/vector.svg" alt="">
+                    </div>
+                    <div class="intro_vector_black">
+                        <img src="assets/images/intro/vector_black.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+
+    <div class="slider">
+        <div class="container">
+            <div class="slider_title">В акции участвуют</div>
+            <div class="slider_main">
+
+                <!-- button prev -->
+
+                <div class="slider-button prev">
+                    <svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Group 128">
+                            <path id="Shape" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.7231 25.59L7.51653 14.5415L19.7231 3.49296L16.0081 0.130371L0.0864164 14.5415L16.0081 28.9525L19.7231 25.59Z"
+                                fill="#currentColor" />
+                        </g>
+                    </svg>
+
+                </div>
+
+                <div class="slider_container">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+
+                            <!-- pagination -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- button next -->
+                </div>
+                <div class="slider-button next">
+                    <svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Group 128">
+                            <path id="Shape" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.277343 25.59L12.484 14.5415L0.277344 3.49296L3.9924 0.130371L19.9141 14.5415L3.9924 28.9525L0.277343 25.59Z"
+                                fill="#currentColor" />
+                        </g>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container footer">
+            <div class="footer_main">
+                <div class="footer_kol_div">
+
+                    <div class="footer_kol inf">
+                        <div class="footer_kol_phone">Информационная линия
+                            <h2>8 800 333-15-25</h2>
+                        </div>
+                    </div>
+                    <div class="footer_kol row">
+                        <div class="footer_btn feedback">
+                            <a href="#">Обратная связь</a>
+                        </div>
+                        <div class="footer_btn rules">
+                            <a href="#">Правила акции</a>
+                        </div>
+                        <div class="footer_btn FAQ">
+                            <a href="#">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_kol">
+                    <div class="footer_kol_text">Присоединяйтесь к нам</div>
+                    <div class="footer_kol_resurces">
+                        <a href="#">
+                            <img src="assets/images/footer/facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/footer/vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/footer/in.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/footer/twitter.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/footer/inst.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/footer/pinterest.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_kol_watermark">© 2020 ООО «Валио»</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

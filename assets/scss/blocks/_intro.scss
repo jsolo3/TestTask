@@ -1,0 +1,183 @@
+$font_color: #5A1404;
+$yellow: #FFCD00;
+$red: #E63000;
+
+* {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: $font_color;
+
+
+    font-family: 'PF Din Text';
+    box-sizing: border-box;
+
+    transition: .3s;
+
+}
+
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 135px;
+
+    &.intro {
+        padding: 0;
+    }
+}
+
+
+.intro_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    .intro_40year {
+        font-size: 34px;
+    }
+
+    .intro_bg_img {
+        img {
+            width: 100%;
+        }
+
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        
+    }
+
+    .intro_bg_top {
+        position: absolute;
+        z-index: -1;
+        background-color: #FFCD00;
+        border-radius: 70%;
+    }
+
+    .intro_bg_low {
+        position: absolute;
+        top: 520px;
+
+        z-index: -2;
+        background: linear-gradient(180deg, #ECB200 0%, #FFCF00 78.83%);
+        width: 100%;
+        height: 58%;
+    }
+
+    .intro_img {
+        width: 100%;
+
+        img {
+            width: 43%;
+        }
+
+        position: absolute;
+        top: 150px;
+        left: 310px;
+    }
+
+    .intro_40year {
+        margin: 70px 0 60px;
+        font-size: 60px;
+        font-weight: 500;
+        color: $red;
+        text-transform: uppercase;
+
+        text-shadow: -3px 3px #fff;
+    }
+
+    .intro_str {
+        width: 80%;
+        margin-bottom: 70px;
+        display: flex;
+        flex-wrap: wrap;
+            
+
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap: 0 30px;
+
+        .intro_kol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+
+            &.frame {
+                padding-top: 75px;
+                width: 40px;
+            }
+
+            .intro_kol_text {
+                padding-top: 22px;
+            }
+        }
+    }
+
+    .intro_decor {
+        position: relative;
+        width: 100%;
+        height: 20px;
+        background: #fff;
+
+        .intro_balloon {
+            position: absolute;
+            top: -440px;
+            left: 3%;
+        }
+
+        .intro_vector_wh {
+            position: absolute;
+            top: -380px;
+            left: 90%;
+        }
+
+        .intro_vector_black {
+            position: absolute;
+            top: -48px;
+            left: -420px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// Button
+
+.button {
+    cursor: pointer;
+
+    margin-top: -30px;
+    padding: 15px 60px;
+    background-color: $red;
+    border: 9px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 16px;
+
+    &:hover {
+        background-color: #b42700;
+        box-shadow: 0px 0px 10px 5px #fff;
+    }
+}
+
+// BUTTON HOVER
