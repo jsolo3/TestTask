@@ -48,7 +48,7 @@
   position: absolute;
   top: 520px;
   z-index: -2;
-  background: linear-gradient(180deg, #ECB200 0%, #FFCF00 78.83%);
+  background: linear-gradient(180deg, #ECB200 0%, #FFCD00 78.83%);
   width: 100%;
   height: 58%;
 }
@@ -129,6 +129,10 @@
 .button:hover {
   background-color: #b42700;
   box-shadow: 0px 0px 10px 5px #fff;
+}
+
+body {
+  background-color: #fff;
 }
 
 .burger_toggle {
@@ -231,11 +235,10 @@
   align-items: center;
   text-transform: uppercase;
 }
-.header .header_center,
-.header .header_right {
+.header_center, .header_right {
   display: flex;
 }
-.header .header_center {
+.header_center {
   gap: 10px;
 }
 
@@ -245,14 +248,14 @@
   padding: 10px 45px;
 }
 .header_item a:hover {
-  color: #ecb201;
+  color: #bb1f00;
 }
 .header_item.enter a {
   background-color: #FFCD00;
 }
 .header_item.enter a:hover {
-  color: #5B1A0D;
-  background-color: #ecb201;
+  color: #bb1f00;
+  background-color: #ECB200;
 }
 
 .slider_title {
@@ -275,10 +278,10 @@
 .slider_main .slider_container .swiper {
   height: 115%;
 }
-.slider_main .slider_container .swiper .swiper-pagination {
+.slider_main .slider_container .swiper-pagination {
   margin-top: 50px;
 }
-.slider_main .slider_container .swiper .swiper-pagination .swiper-pagination-bullet-active {
+.slider_main .slider_container .swiper-pagination-bullet-active {
   color: #fff;
   opacity: 1;
   border: 2px solid #5A1404;
@@ -345,7 +348,7 @@
 }
 .footer_kol_phone h2 {
   font-size: 36px;
-  color: #E43219;
+  color: #E63000;
 }
 
 .footer_kol_watermark {
@@ -367,7 +370,7 @@
   gap: 10px;
 }
 .footer_kol_resurces.burger a {
-  background-color: #ecb200;
+  background-color: #ECB200;
 }
 .footer_kol_resurces a {
   display: flex;
@@ -417,7 +420,7 @@ body .modal_window .btn_div .btn_close {
   align-self: center;
   width: 100%;
   height: 0;
-  background-color: #5B1A0D;
+  background-color: #5A1404;
 }
 body .modal_window .btn_div .btn_close::after, body .modal_window .btn_div .btn_close::before {
   display: block;
@@ -426,7 +429,7 @@ body .modal_window .btn_div .btn_close::after, body .modal_window .btn_div .btn_
   width: 100%;
   height: 3px;
   position: relative;
-  background-color: #5B1A0D;
+  background-color: #5A1404;
 }
 body .modal_window .btn_div .btn_close::after {
   transform-origin: left bottom;

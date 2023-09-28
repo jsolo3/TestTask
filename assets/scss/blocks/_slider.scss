@@ -1,5 +1,5 @@
-$font_color: #5A1404;
-$red: #E63000;
+@import "_theme.scss";
+
 
 // Slider
 
@@ -27,14 +27,14 @@ $red: #E63000;
         .swiper {
             height: 115%;
 
-            .swiper-pagination {
+            &-pagination {
                 margin-top: 50px;
 
-                .swiper-pagination-bullet-active {
-                    color: #fff;
+                &-bullet-active {
+                    color: $white;
                     opacity: 1;
                     border: 2px solid $font_color;
-                    background: #fff;
+                    background: $white;
                 }
             }
         }

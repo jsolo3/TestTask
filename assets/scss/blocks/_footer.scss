@@ -1,9 +1,9 @@
-$font_color: #5A1404;
-$yellow: #FFCD00;
-$red: #E63000;
+@import "_theme.scss";
+
+
 
 .container.footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $grey;
     padding-bottom: 25px;
 }
 .footer_main {
@@ -30,7 +30,7 @@ $red: #E63000;
     text-transform: uppercase;
     h2 {
         font-size: 36px;
-        color: #E43219;
+        color: $red;
     }
 }
 
@@ -56,7 +56,7 @@ $red: #E63000;
 
     &.burger {
         a {
-            background-color: #ecb200;
+            background-color: $orange;
         }
     }
     a{

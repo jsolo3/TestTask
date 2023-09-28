@@ -1,7 +1,8 @@
-$bg_color: #FFCD00;
-$font_color: #5B1A0D;
-$burger_border: #ECB200;
+@import "_theme.scss";
 
+body {
+    background-color: $white;
+}
 
 // burger menu
 
@@ -74,7 +75,7 @@ $burger_border: #ECB200;
     left: 0;
 
     z-index: 100;
-    background-color: $bg_color;
+    background-color: $yellow;
 
     .burger_main {
         display: none;
@@ -101,7 +102,7 @@ $burger_border: #ECB200;
             text-transform: none;
 
             padding: 25px 0 25px;
-            border-bottom: 1px solid $burger_border;
+            border-bottom: 1px solid $orange;
 
             a {
                 text-decoration: none;
@@ -118,7 +119,7 @@ $burger_border: #ECB200;
 // 
 
 .nav {
-    background-color: #fff;
+    background-color: $white;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -132,12 +133,12 @@ $burger_border: #ECB200;
 
     text-transform: uppercase;
 
-    .header_center,
-    .header_right {
+    &_center,
+    &_right {
         display: flex;
     }
 
-    .header_center {
+    &_center {
         gap: 10px;
 
     }
@@ -153,17 +154,17 @@ $burger_border: #ECB200;
         padding: 10px 45px;
 
         &:hover {
-            color: #ecb201;
+            color: $font_color-brown;
         }
     }
 
     &.enter {
         a {
-            background-color: $bg_color;
+            background-color: $yellow;
 
             &:hover {
-                color: $font_color;
-                background-color: #ecb201;
+                color: $font_color-brown;
+                background-color: $orange;
             }
         }
     }
